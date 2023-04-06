@@ -8,6 +8,7 @@ public class DataExchange {
 	private int LIV = 1;
 	private int LIS = 0;
 
+//Code that exchanges data between threads
 public DataExchange(){
 }
 	public void setObstacleDetected(boolean status) {

@@ -18,7 +18,7 @@ public class RunClass {
 		LSObj = new lightSensor(DE);
 
 		
-		
+		//start all threads
 		LSObj.start();
 		ODObj.start();
 		LFObj.start();
