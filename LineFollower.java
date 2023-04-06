@@ -9,13 +9,13 @@ public class LineFollower extends Thread {
 	DataExchange DEObj;
 	private EV3LargeRegulatedMotor motorA;
 	private EV3LargeRegulatedMotor motorB;
-
+	//Calling lego robot motors
 	public LineFollower(DataExchange DE) {
 		DEObj = DE;
 		motorA = new EV3LargeRegulatedMotor(MotorPort.A);
 		motorB = new EV3LargeRegulatedMotor(MotorPort.B);
 	}
-
+	//Starting a program when press any button on a robot
 	public void run() {
 		System.out.println("Press any button to start");
 		Button.waitForAnyPress();
@@ -65,7 +65,7 @@ public class LineFollower extends Thread {
 				DEObj.setCMD(0);
 				DEObj.setLIV(2);
 			}
-			//Dodgin obstacle when sees it
+			//Dodging obstacle when sees it
 			if (DEObj.getCMD() == 3) {
 				motorB.stop();
 				motorA.stop();
