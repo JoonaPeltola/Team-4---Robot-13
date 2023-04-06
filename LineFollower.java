@@ -39,7 +39,7 @@ public class LineFollower extends Thread {
 					motorB.setSpeed(60);
 				}
 			}
-
+			//Motor code
 			if (DEObj.getCMD() == 1 && DEObj.getLIS() ==1) {
 				DEObj.setCMD(0);
 			}
@@ -65,7 +65,7 @@ public class LineFollower extends Thread {
 				DEObj.setCMD(0);
 				DEObj.setLIV(2);
 			}
-
+			//Dodgin obstacle when sees it
 			if (DEObj.getCMD() == 3) {
 				motorB.stop();
 				motorA.stop();
