@@ -44,6 +44,7 @@ public class LineFollower extends Thread {
 			if (DEObj.getCMD() == 1 && DEObj.getLIS() ==1) {
 				DEObj.setCMD(0);
 			}
+			//Motors moving a robot
 			if (DEObj.getCMD() == 1) {
 				motorB.forward();
 				motorA.backward();
