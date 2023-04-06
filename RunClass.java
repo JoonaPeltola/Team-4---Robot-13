@@ -18,13 +18,14 @@ public class RunClass {
 		LFObj = new LineFollower(DE);
 		LSObj = new lightSensor(DE);
 
+
+		//starting threads
 		
-		//start all threads
 		LSObj.start();
 		ODObj.start();
 		LFObj.start();
 
-		
+		//making Robot stop when pressing button
 
 		while(!Button.ESCAPE.isDown()) {
 			
