@@ -16,7 +16,7 @@ public class ObstacleDetector extends Thread {
 	
 
 	public void run() {
-
+//button
 		Button.waitForAnyPress();
 
 		final SampleProvider sp = us1.getDistanceMode();
@@ -35,8 +35,10 @@ public class ObstacleDetector extends Thread {
 
 			}
 			
+
 			
 			
+		//After second time seeing	
 			if (distanceValue <=15 && DEObj.getLIV()==2) {
 				DEObj.setCMD(3);
 			}

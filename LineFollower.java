@@ -43,6 +43,8 @@ public class LineFollower extends Thread {
 			//Motor code
 			if (DEObj.getCMD() == 1 && DEObj.getLIS() ==1) {
 				DEObj.setCMD(0);
+
+			
 			}
 			if (DEObj.getCMD() == 1) {
 				motorB.forward();
