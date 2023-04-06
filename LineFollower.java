@@ -17,6 +17,7 @@ public class LineFollower extends Thread {
 	}
 	//Starting a program when press any button on a robot
 	public void run() {
+		//Prints the prompt that tells to user how to start the linefollower
 		System.out.println("Press any button to start");
 		Button.waitForAnyPress();
 		Delay.msDelay(500);
