@@ -23,7 +23,7 @@ public class RunClass {
 		ODObj.start();
 		LFObj.start();
 
-		
+		//making Robot stop when pressing button
 
 		while(!Button.ESCAPE.isDown()) {
 			
