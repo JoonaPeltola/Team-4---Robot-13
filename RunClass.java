@@ -17,7 +17,7 @@ public class RunClass {
 		LFObj = new LineFollower(DE);
 		LSObj = new lightSensor(DE);
 
-		
+		//starting threads
 		
 		LSObj.start();
 		ODObj.start();
