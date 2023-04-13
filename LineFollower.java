@@ -84,6 +84,7 @@ public class LineFollower extends Thread {
 				motorA.stop();
 				DEObj.setCMD(5);
 			}
+			//Motor code ends here
 
 		}
 
