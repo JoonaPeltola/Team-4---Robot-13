@@ -22,6 +22,8 @@ public class ObstacleDetector extends Thread {
 		final SampleProvider sp = us1.getDistanceMode();
 		int distanceValue = 0;
 
+
+
 		while (!Button.ESCAPE.isDown()) {
 			float[] sample = new float[sp.sampleSize()];
 			sp.fetchSample(sample, 0);
@@ -29,6 +31,8 @@ public class ObstacleDetector extends Thread {
 
 			// System.out.println("Distance: " + distanceValue);
 
+
+			//if distacnevalue is <16 CMD is set to 1
 			if (distanceValue <= 15) {
 				DEObj.setCMD(1);
 
@@ -36,7 +40,6 @@ public class ObstacleDetector extends Thread {
 			}
 			
 
-			
 			
 		//After second time seeing	
 			if (distanceValue <=15 && DEObj.getLIV()==2) {
