@@ -22,6 +22,8 @@ public class LineFollower extends Thread {
 		Button.waitForAnyPress();
 		Delay.msDelay(500);
 
+
+
 		while (!Button.ESCAPE.isDown()) {
 		
 			if (DEObj.getCMD() == 0) {
@@ -46,6 +48,7 @@ public class LineFollower extends Thread {
 
 			
 			}
+			//Motors moving a robot
 			if (DEObj.getCMD() == 1) {
 				motorB.forward();
 				motorA.backward();
