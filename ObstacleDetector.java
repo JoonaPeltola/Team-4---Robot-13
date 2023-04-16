@@ -45,7 +45,7 @@ public class ObstacleDetector extends Thread {
 			if (distanceValue <=15 && DEObj.getLIV()==2) {
 				DEObj.setCMD(3);
 			}
-
+			
 
 		}
 

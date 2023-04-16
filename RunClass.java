@@ -9,7 +9,7 @@ public class RunClass {
 	private static lightSensor LSObj;
 	
 
-	
+
 	public static void main(String[] args) {
 		
 		//calling the DataExchange function
