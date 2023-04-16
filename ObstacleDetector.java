@@ -46,6 +46,7 @@ public class ObstacleDetector extends Thread {
 				DEObj.setCMD(3);
 			}
 
+
 		}
 
 	}
