@@ -26,7 +26,7 @@ public class lightSensor extends Thread {
 			sampleProvider.fetchSample(sample, 0);
 			float light = sample[0];
 			// Print the light intensity value
-//			System.out.println("Light intensity: " + sample[0]);
+			// System.out.println("Light intensity: " + sample[0]);
 
 			if (DEObj.getCMD() == 0) {
 				// Example of using the light sensor to detect black
